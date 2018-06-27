@@ -7,6 +7,11 @@ header
 	box-shadow: 0px 2px 5px color-rgba($black,0.15)
 	+pos(fix, 0 0 null 0)
 	z-index: 1000
+	&.minimal
+		+media-breakpoint-up(xl)
+			.sitelogo
+				height: 70px
+				+transition(all,0.5s)
 	.header-wrap
 		+flexbox
 		align-items: center

@@ -31,6 +31,17 @@ $(document).ready(function () {
     // breadcrumb script
     $(".pagename").append($('.breadcrumb li a').eq(1).find('span').html());
 
+    // page scroll to id
+    $(".page-scroll a").mPageScroll2id({
+        forceSingleHighlight: true,
+        offset: 100
+    });
+
+    // toggle category mobile
+    $('.cate-toggle').click(function () {
+        $(this).siblings('ul').slideToggle(200);
+    });
+
     // banner
     $('.banner-slide').slick({
         slidesToShow: 1,
@@ -96,18 +107,83 @@ $(document).ready(function () {
         }]
     });
 
-    $('.product-slick-wide').slick({
-        slidesToShow: 5,
+    // history slick
+    $('.history-slick').slick({
+        slidesToShow: 6,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
         infinite: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
         responsive: [{
             breakpoint: 1199,
             settings: {
+                slidesToShow: 5
+            }
+        }, {
+            breakpoint: 991,
+            settings: {
                 slidesToShow: 4
+            }
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
+
+    // award slick
+    $('.award-slick').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        responsive: [{
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 5
+            }
+        }, {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
+    });
+
+    // place slick
+    $('.place-slick').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: false,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        responsive: [{
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3
             }
         }, {
             breakpoint: 991,
@@ -118,6 +194,11 @@ $(document).ready(function () {
             breakpoint: 767,
             settings: {
                 slidesToShow: 2
+            }
+        }, {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1
             }
         }]
     });

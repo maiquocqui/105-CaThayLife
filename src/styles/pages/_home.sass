@@ -143,25 +143,7 @@
 		+bor-rad(20px)
 		padding: 20px 25px 10px
 		margin-bottom: 30px
-	.about-vision
-		+media-breakpoint-down(md)
-			padding-top: 30px
-		.vision
-			margin-bottom: 30px
-			figure
-				+flexbox
-				.vision-img
-					display: block
-					width: 70px
-				figcaption
-					width: calc(100% - 70px)
-					.vision-name
-						+fs(18rem)
-						font-weight: 500
-						color: $green
-						margin-bottom: 5px
-					.vision-des
-						+fs(15rem)
+	
 
 .home-news-wrap
 	@extend .home-section
@@ -234,13 +216,17 @@
 .home-customer
 	@extend .home-section
 	background: darken($white,4%)
+	.customer-service
+		+media-breakpoint-down(lg)
+			max-width: 800px
+			margin: 0 auto
 	.row
 		margin: 0px -10px
 		.col-custom
 			+media-breakpoint-up(xl)
 				flex: 0 0 12.5%
 				max-width: 12.5%
-			+media-breakpoint-down(md)
+			+media-breakpoint-down(lg)
 				margin-bottom: 20px
 	.service
 		display: block
