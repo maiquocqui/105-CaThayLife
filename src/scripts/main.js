@@ -39,6 +39,11 @@ $(document).ready(function() {
     $('.cate-toggle').click(function() {
         $(this).siblings('ul').slideToggle(200);
     });
+    if ($(window).width() < 1200) {
+        $('.page-scroll li').click(function() {
+            $('.page-scroll ul').slideUp(200);
+        })
+    }
 
     // banner
     $('.banner-slide').slick({

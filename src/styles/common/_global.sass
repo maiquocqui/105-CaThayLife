@@ -84,6 +84,7 @@ main
 	ul, ol, p, h1, h2, h3, h4, h5, h6, img, figure
 		margin-bottom: 15px
 		line-height: inherit
+		font-weight: inherit
 		+media-breakpoint-down(xs)
 			margin-bottom: 10px
 		// &:last-child
@@ -106,12 +107,27 @@ main
 	ul 
 		padding-left: 20px
 		list-style-type: disc
+		&.dot
+			list-style-type: none
+			li
+				+pos(rel,null)
+				&:before
+					content: ''
+					display: block
+					width: 8px
+					height: 8px
+					+bor-rad(50px)
+					background: darken($white,30%)
+					+pos(abs, 7px null null -20px)
 	h6
 		+fs(16rem)
+		+media-breakpoint-down(sm)
 	h5
 		+fs(18rem)
 	h4
 		+fs(20rem)
+		+media-breakpoint-down(sm)
+			+fs(16rem)
 	h3
 		+fs(24rem)
 		+media-breakpoint-down(xs)
@@ -123,6 +139,8 @@ main
 	.material-icons
 		vertical-align: middle
 .text-green
+	color: $green
+.text-lgreen
 	color: $lightgreen
 .text-orange
 	color: $orange

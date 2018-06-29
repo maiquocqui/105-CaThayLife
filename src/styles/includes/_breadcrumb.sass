@@ -3,6 +3,11 @@
 	.breadcrumb-img
 		img
 			width: 100%
+			+media-breakpoint-down(md)
+				height: 200px
+				object-fit: cover
+			+media-breakpoint-down(sm)
+				height: 180px
 	.breadcrumb-content
 		+flexbox
 		align-items: flex-end
@@ -30,11 +35,19 @@
 			width: 250px
 			height: 120px
 			padding: 0px 25px
+		+media-breakpoint-down(sm)
+			+fs(24rem)
+			width: 230px
+			height: 100px
+			padding: 0px 15px
+			background: color-rgba($green,0.8)
 	.breadcrumb
 		margin: 0
 		padding: 0
 		background: none
 		+bor-rad(0)
+		+media-breakpoint-down(sm)
+			display: none
 		li
 			background: darken($white,10%)
 			padding-left: 15px
