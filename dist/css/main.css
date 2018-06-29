@@ -9863,6 +9863,15 @@ footer {
         border-left: 1px solid rgba(255, 255, 255, 0.3); }
       .product-section .product-condition .condition-table table tr:last-child th, .product-section .product-condition .condition-table table tr:last-child td {
         border-bottom: none; }
+  .product-section .benefit-content {
+    background: #fff;
+    padding: 35px 55px; }
+    .product-section .benefit-content .title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-transform: uppercase; }
+      .product-section .benefit-content .title span {
+        font-weight: inherit; }
 
 .need-page {
   padding: 60px 0; }
