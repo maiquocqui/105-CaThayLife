@@ -29,7 +29,7 @@ $(document).ready(function () {
     });
 
     // breadcrumb script
-    $(".pagename").append($('.breadcrumb li a').eq(1).find('span').html());
+    // $(".pagename").append($('.breadcrumb li a').eq(1).find('span').html());
 
     // page scroll to id
     $(".page-scroll a").mPageScroll2id({
@@ -202,6 +202,32 @@ $(document).ready(function () {
             }
         }, {
             breakpoint: 575,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+
+    // product support
+    $('.support-slick').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        responsive: [{
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 767,
             settings: {
                 slidesToShow: 1
             }
