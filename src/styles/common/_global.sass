@@ -119,6 +119,18 @@ main
 					+bor-rad(50px)
 					background: darken($white,30%)
 					+pos(abs, 7px null null -20px)
+		&.dot-green
+			list-style-type: none
+			li
+				+pos(rel,null)
+				&:before
+					content: ''
+					display: block
+					width: 6px
+					height: 6px
+					+bor-rad(50px)
+					background: $lightgreen
+					+pos(abs, 8px null null -20px)
 		&.note
 			list-style-type: none
 			padding-left: 0

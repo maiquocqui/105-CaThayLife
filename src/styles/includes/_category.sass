@@ -1,6 +1,6 @@
 .page-tab
 	+pos(rel,null)
-	// padding: 20px 0 0
+	padding: 20px 0 0
 	.cate-toggle
 		display: none
 		+fs(15rem)
@@ -82,6 +82,9 @@
 				a, .nav-link
 					color: $green
 					border-bottom-color: $green
+					+media-breakpoint-down(lg)
+						background: $lightgreen
+						color: $white
 
 .responsivetabs
 	@extend .page-tab

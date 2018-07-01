@@ -76,11 +76,17 @@
 		z-index: -1
 	.history-wrap
 	.history-slick
+		+media-breakpoint-down(lg)
+			margin-bottom: 40px
 		.slick-prev, .slick-next
 			+pos(abs, 50% null null null)
 			+transform(translateY(-50%))
 			z-index: 3
 			+fs(0)
+			+media-breakpoint-down(lg)
+				top: unset
+				bottom: -10px
+				+transform(translate(0,100%))
 			&:before
 				content: ''
 				+fs(20rem)
@@ -94,15 +100,22 @@
 				background: $lightgreen
 				text-shadow: 0px 1px 1px color-rgba($black,0.3)
 				+transition(all,0.5s)
+				+media-breakpoint-down(lg)
+					width: 40px
+					height: 40px
 			&:hover
 				&:before
 					background: $green
 		.slick-prev
-			left: -80px
+			left: -25px
+			+media-breakpoint-down(lg)
+				left: calc(50% - 45px)
 			&:before
 				content: '\f104'
 		.slick-next
-			right: -80px
+			right: -25px
+			+media-breakpoint-down(lg)
+				right: calc(50% - 45px)
 			&:before
 				content: '\f105'
 		.slick-list
@@ -164,11 +177,17 @@
 	@extend .about-section
 	margin-top: -50px
 	.award-slick
+		+media-breakpoint-down(lg)
+			margin-bottom: 40px
 		.slick-prev, .slick-next
 			+pos(abs, 50% null null null)
 			+transform(translateY(-50%))
 			z-index: 3
 			+fs(0)
+			+media-breakpoint-down(lg)
+				top: unset
+				bottom: -10px
+				+transform(translate(0,100%))
 			&:before
 				content: ''
 				+fs(20rem)
@@ -182,15 +201,22 @@
 				background: $lightgreen
 				text-shadow: 0px 1px 1px color-rgba($black,0.3)
 				+transition(all,0.5s)
+				+media-breakpoint-down(lg)
+					width: 40px
+					height: 40px
 			&:hover
 				&:before
 					background: $green
 		.slick-prev
-			left: -80px
+			left: -25px
+			+media-breakpoint-down(lg)
+				left: calc(50% - 45px)
 			&:before
 				content: '\f104'
 		.slick-next
-			right: -80px
+			right: -25px
+			+media-breakpoint-down(lg)
+				right: calc(50% - 45px)
 			&:before
 				content: '\f105'
 		.slick-list
