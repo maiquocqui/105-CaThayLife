@@ -119,6 +119,28 @@ main
 					+bor-rad(50px)
 					background: darken($white,30%)
 					+pos(abs, 7px null null -20px)
+		&.note
+			list-style-type: none
+			padding-left: 0
+			li
+				+pos(rel,null)
+				padding-left: 30px
+				.star
+					+pos(abs, 0 null null 0)
+		&.icon
+			list-style-type: none
+			padding-left: 0
+			li
+				padding-left: 30px
+				+pos(rel,null)
+				.material-icons
+					+fs(18rem)
+					+pos(abs, 2px null null 0)
+	ol
+		list-style-type: decimal
+		padding-left: 20px
+		li
+			padding-left: 10px
 	h6
 		+fs(16rem)
 		+media-breakpoint-down(sm)
@@ -217,7 +239,7 @@ img, iframe
 	+text-shadow(#{1px 1px 0 #fdfdfd, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #fdfdfd})
 
 .text-bold
-	+fw(bold)
+	font-weight: bold !important
 .text-400
 	+fw(400)
 .text-500
