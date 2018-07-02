@@ -95,6 +95,11 @@
 				+fs(14rem)
 			&:last-child
 				border-right: 1px solid darken($white,8%)
+		.btn-download
+			.material-icons
+				+fs(20rem)
+				color: $green
+				line-height: 1
 	.customer-content
 		.content
 			+fs(15rem)
@@ -229,3 +234,55 @@
 			color: $green
 			+pos(abs, 1px null null -10px)
 			+fs(40rem)
+	.bieumau-table
+		overflow: auto
+		table
+			th
+				+fs(15rem)
+				padding: 20px 10px
+			td
+				padding: 10px
+			th,td
+				&:first-child
+					width: 80px
+					text-align: center
+					+media-breakpoint-down(sm)
+						width: 50px
+				&:last-child
+					width: 100px
+					text-align: center
+					+media-breakpoint-down(sm)
+						width: 60px
+			.btn-download
+				+flexbox
+				align-items: center
+				align-content: center
+				justify-content: center
+				+fs(15rem)
+				.material-icons
+	.gioithieu-content
+		.row
+			padding: 50px 50px 35px
+			+media-breakpoint-down(sm)
+				padding: 30px 15px 15px
+			&:nth-child(even)
+				background: darken($white,2%)
+	.faq-list
+		.faq
+			.faq-title
+				+fs(16rem)
+				font-weight: 500
+				color: $main
+				border-bottom: 1px solid darken($white,10%)
+				padding: 15px 20px
+				cursor: pointer
+			.faq-content
+				padding: 20px 20px 5px
+				border-bottom: 1px solid darken($white,10%)
+				display: none
+				.content
+			&.active
+				.faq-title
+					background: #f6fff0
+					color: $green
+					border-bottom: 2px solid $green

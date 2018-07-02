@@ -8518,7 +8518,7 @@ header {
           border-left: 16px solid #fff;
           position: absolute;
           top: 0;
-          left: 103%;
+          left: calc(100% + 2px);
           z-index: 1; }
       .breadcrumb-wrap .breadcrumb li:first-child {
         padding-left: 0; }
@@ -9099,7 +9099,8 @@ footer {
       font-size: 1.75rem; } }
   @media (max-width: 767.98px) {
     .home-title {
-      font-size: 1.5rem; } }
+      font-size: 1.375rem;
+      margin-bottom: 20px; } }
 
 .home-des {
   font-size: 1.125rem;
@@ -9112,7 +9113,8 @@ footer {
       font-size: 1rem; } }
   @media (max-width: 767.98px) {
     .home-des {
-      font-size: 0.875rem; } }
+      font-size: 0.875rem;
+      margin-top: -15px; } }
   .home-des:after {
     content: '';
     display: block;
@@ -10504,6 +10506,10 @@ footer {
           font-size: 0.875rem; } }
       .customer-section .customer-table3 td:last-child {
         border-right: 1px solid #ebebeb; }
+    .customer-section .customer-table3 .btn-download .material-icons, .customer-section .customer-table3 .btn-download .mi, .customer-section .customer-table3 .btn-download #scrollUp:before {
+      font-size: 1.25rem;
+      color: #00994e;
+      line-height: 1; }
   .customer-section .customer-content .content {
     font-size: 0.9375rem;
     color: #666666; }
@@ -10641,6 +10647,57 @@ footer {
       top: 1px;
       left: -10px;
       font-size: 2.5rem; }
+  .customer-section .bieumau-table {
+    overflow: auto; }
+    .customer-section .bieumau-table table th {
+      font-size: 0.9375rem;
+      padding: 20px 10px; }
+    .customer-section .bieumau-table table td {
+      padding: 10px; }
+    .customer-section .bieumau-table table th:first-child, .customer-section .bieumau-table table td:first-child {
+      width: 80px;
+      text-align: center; }
+      @media (max-width: 767.98px) {
+        .customer-section .bieumau-table table th:first-child, .customer-section .bieumau-table table td:first-child {
+          width: 50px; } }
+    .customer-section .bieumau-table table th:last-child, .customer-section .bieumau-table table td:last-child {
+      width: 100px;
+      text-align: center; }
+      @media (max-width: 767.98px) {
+        .customer-section .bieumau-table table th:last-child, .customer-section .bieumau-table table td:last-child {
+          width: 60px; } }
+    .customer-section .bieumau-table table .btn-download {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      font-size: 0.9375rem; }
+  .customer-section .gioithieu-content .row {
+    padding: 50px 50px 35px; }
+    @media (max-width: 767.98px) {
+      .customer-section .gioithieu-content .row {
+        padding: 30px 15px 15px; } }
+    .customer-section .gioithieu-content .row:nth-child(even) {
+      background: #fafafa; }
+  .customer-section .faq-list .faq .faq-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333333;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px 20px;
+    cursor: pointer; }
+  .customer-section .faq-list .faq .faq-content {
+    padding: 20px 20px 5px;
+    border-bottom: 1px solid #e6e6e6;
+    display: none; }
+  .customer-section .faq-list .faq.active .faq-title {
+    background: #f6fff0;
+    color: #00994e;
+    border-bottom: 2px solid #00994e; }
 
 .news-col {
   height: calc(100% - 20px);
