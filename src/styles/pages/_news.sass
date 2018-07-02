@@ -1,0 +1,158 @@
+.news-col
+	height: calc(100% - 20px)
+	margin-bottom: 20px
+	background: darken($white,4%)
+	figure
+		.news-img
+			display: block
+			img
+				width: 100%
+		figcaption
+			padding: 15px 20px
+			+pos(rel,null)
+			time
+				+pos(abs, null null 100% 20px)
+				background: $green
+				color: $white
+				text-align: center
+				padding: 3px 5px
+				.date
+					+fs(30rem)
+					font-weight: 700
+					line-height: 1
+					border-bottom: 1px solid $white
+				.month
+					+fs(12rem)
+					font-weight: 300
+			.news-name
+				+fs(16rem)
+				font-weight: 600
+	&:hover
+		figure
+			figcaption
+				.news-name
+					color: $lightgreen
+
+.news-page
+	padding: 60px 0
+	// background: $white
+	.container
+		+media-breakpoint-up(xl)
+			max-width: 1140px
+			width: 100%
+	.news-list
+		.news-col
+			height: calc(100% - 30px)
+			margin-bottom: 30px
+	.news-title
+		+fs(30rem)
+		line-height: 1.3
+		font-weight: 500
+		margin-bottom: 10px
+	.news-detail
+		+flexbox
+		align-items: center
+		align-content: center
+		margin-bottom: 30px
+		time
+			display: block
+			background: $green
+			color: $white
+			text-align: center
+			padding: 3px 7px
+			.date
+				+fs(30rem)
+				font-weight: 700
+				line-height: 1
+				border-bottom: 1px solid $white
+			.month
+				+fs(12rem)
+				font-weight: 300
+		.des
+			flex: auto
+			padding-left: 30px
+			+fs(18rem)
+			font-weight: 300
+			color: darken($white,60%)
+
+.share
+	+flexbox
+	align-items: center
+	align-content: center
+	a
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: center
+		width: 60px
+		height: 30px
+		+fs(18rem)
+		color: $white
+		+pos(rel,null)
+		&:after
+			content: ''
+			+pos(abs, 0 null 0 0)
+			right: 0
+			z-index: 1
+			background: $white
+			opacity: 0
+			+transition(all,0.5s)
+		+ a
+			margin-left: 5px
+		&:hover
+			&:after
+				opacity: 0.3
+		&:active, &:focus
+			&:after
+				background: $black
+				opacity: 0.1
+
+	.fa-twitter
+		background: #2aa9e0
+	.fa-facebook
+		background: #204385
+	.fa-google-plus
+		background: #d4492a
+	.fa-pinterest-p
+		background: #ca2128
+	.fa-linkedin
+		background: #02669a
+	.fa-tumblr
+		background: #44546b
+	.fa-envelope-o
+		background: #19232d
+
+.sidebar-news
+	background: darken($white,2%)
+	padding: 20px
+	margin: 60px 0
+	+media-breakpoint-down(md)
+		margin-top: 0
+	.page-title
+		margin-bottom: 10px
+	.post-list
+	.post
+		+flexbox
+		align-items: flex-start
+		align-content: flex-start
+		margin-bottom: 30px
+		time
+			display: block
+			background: $green
+			color: $white
+			text-align: center
+			padding: 3px 7px
+			.date
+				+fs(30rem)
+				font-weight: 700
+				line-height: 1
+				border-bottom: 1px solid $white
+			.month
+				+fs(12rem)
+				font-weight: 300
+		.name
+			padding-left: 10px
+			+fs(16rem)
+			font-weight: 600
+			color: $main
+			line-height: 1.2

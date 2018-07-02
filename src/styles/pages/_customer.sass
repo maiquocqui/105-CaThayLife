@@ -1,14 +1,33 @@
 .customer-section
 	padding: 60px 0
+	+pos(rel,null)
+	&.st
+		&:after
+			content: ''
+			display: block
+			width: 0
+			height: 0
+			border: 15px solid transparent
+			border-bottom: none
+			border-color: $white transparent transparent transparent
+			+pos(abs,100% null null 50%)
+			+transform(translateX(-50%))
+			z-index: 1
+	&.s2
+		background: darken($white,5%)
+		&:after
+			border-color: darken($white,5%) transparent transparent transparent
+	&:last-child
+		&:after
+			display: none
 	.container
 		+media-breakpoint-up(xl)
 			max-width: 1140px
 			width: 100%
-	&.s2
-		background: darken($white,5%)
 	.content
 		color: darken($white,60%)
 	.customer-table
+		overflow: auto
 		+media-breakpoint-down(md)
 			margin-bottom: 30px
 		table
@@ -39,6 +58,7 @@
 				&:last-child
 					border-right: 1px solid darken($white,8%)
 	.customer-table2
+		overflow: auto
 		table
 			th
 				padding: 10px 15px
@@ -50,6 +70,31 @@
 			th, td
 				&:first-child
 					text-align: left
+	.customer-table3
+		overflow: auto
+		th
+			vertical-align: middle
+			background: $lightgreen
+			+fs(16rem)
+			color: $white
+			font-weight: 700
+			padding: 15px 20px
+			border-bottom: 1px solid darken($white,8%)
+			+media-breakpoint-down(md)
+				+fs(15rem)
+				font-weight: 600
+			+ th
+				border-left: 1px solid darken($white,8%)
+		td
+			+fs(15rem)
+			color: darken($white,60%)
+			padding: 8px 20px
+			border-left: 1px solid darken($white,8%)
+			border-bottom: 1px solid darken($white,8%)
+			+media-breakpoint-down(md)
+				+fs(14rem)
+			&:last-child
+				border-right: 1px solid darken($white,8%)
 	.customer-content
 		.content
 			+fs(15rem)

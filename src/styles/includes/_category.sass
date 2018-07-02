@@ -1,6 +1,10 @@
 .page-tab
 	+pos(rel,null)
 	padding: 20px 0 0
+	.container
+		+media-breakpoint-up(xl)
+			max-width: 1140px
+			width: 100%
 	.cate-toggle
 		display: none
 		+fs(15rem)
@@ -15,7 +19,7 @@
 		width: 280px
 		+media-breakpoint-down(lg)
 			display: block
-		+media-breakpoint-down(sm)
+			// +media-breakpoint-down(sm)
 			width: 100%
 		&:before
 			content: '\f107'
@@ -33,17 +37,17 @@
 		+media-breakpoint-down(lg)
 			display: none
 			+pos(abs, null null null auto)
-			width: 280px
+			width: 350px
 			z-index: 3
 			background: $white
 			+bor-rad(5px)
 			padding: 10px 0
 			border: 1px solid darken($white,10%)
 			margin-top: 10px
-		+media-breakpoint-down(sm)
-			width: auto
-			left: 15px
-			right: 15px
+			+media-breakpoint-down(sm)
+				width: auto
+				left: 15px
+				right: 15px
 		li, .nav-item
 			margin: 0
 			padding: 0

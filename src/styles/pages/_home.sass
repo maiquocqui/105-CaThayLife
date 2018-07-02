@@ -146,40 +146,6 @@
 			margin: 0px -10px
 			.col-12
 				padding: 0px 10px
-		.news-col
-			height: calc(100% - 20px)
-			margin-bottom: 20px
-			background: darken($white,4%)
-			figure
-				.news-img
-					display: block
-					img
-						width: 100%
-				figcaption
-					padding: 15px 20px
-					+pos(rel,null)
-					time
-						+pos(abs, null null 100% 20px)
-						background: $green
-						color: $white
-						text-align: center
-						padding: 3px 5px
-						.date
-							+fs(30rem)
-							font-weight: 700
-							line-height: 1
-							border-bottom: 1px solid $white
-						.month
-							+fs(12rem)
-							font-weight: 300
-					.news-name
-						+fs(16rem)
-						font-weight: 600
-			&:hover
-				figure
-					figcaption
-						.news-name
-							color: $lightgreen
 .home-career
 	.job-list
 		.job-col
