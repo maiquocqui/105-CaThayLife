@@ -52,6 +52,9 @@ main
 	// font-family: 'Montserrat', sans-serif
 	+fs(15rem)
 	line-height: 1.5
+	color: darken($white,60%)
+	&.text-black
+		color: $main
 	.row
 		margin: 0px -10px
 		.col-12
@@ -152,6 +155,32 @@ main
 				.material-icons
 					+fs(18rem)
 					+pos(abs, 2px null null 0)
+		&.arrow
+			list-style-type: none
+			padding-left: 0
+			li
+				padding-left: 25px
+				+pos(rel,null)
+				&:before
+					content: '\f178'
+					+fs(14rem)
+					+pos(abs, 1px null null 0)
+					color: $green
+		&.check
+			list-style-type: none
+			padding-left: 0
+			li
+				padding-left: 25px
+				+pos(rel,null)
+				&:before
+					content: 'check'
+					@extend .material-icons
+					+fs(15rem)
+					+pos(abs, 3px null null 0)
+					color: $green
+	a
+		&:hover
+			color: $lightgreen
 	ol
 		list-style-type: decimal
 		padding-left: 20px
