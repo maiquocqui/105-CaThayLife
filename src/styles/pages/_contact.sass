@@ -1,0 +1,28 @@
+.contact-page
+	padding: 60px 0
+	.container
+		+media-breakpoint-up(xl)
+			max-width: 1140px
+			width: 100%
+.contact-info
+	// margin-bottom: 50px
+	.item
+		+flexbox
+		.icon
+			width: 60px
+			padding-top: 5px
+			.lnr
+				+fs(40rem)
+				color: $green
+		.des
+			width: calc(100% - 60px)
+			h5
+				+fs(18rem)
+			p, a
+				+fs(15rem)
+				color: $main
+				display: block
+				line-height: 1.5
+.contact-form
+	background: darken($white,5%)
+	padding: 60px 90px

@@ -1,45 +1,100 @@
 section.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/4.jpg", alt="")
 	.container
-		ol.breadcrumb
-			li
-				a(href="#!") Trang chủ
-			li
-				a(href="#!") Liên hệ
+		.breadcrumb-content
+			.pagename Liên hệ
+			ol.breadcrumb
+				li
+					a(href="#!") 
+						span Trang chủ
+				li
+					a(href="#!") 
+						span Liên hệ
 section.contact-page
 	.container
-		//- h1.home-title.text-center SƠ LƯỢC VỀ CÔNG TY THIÊN QUỐC
-		.row
-			.col-12.col-lg-8
-				.contact-form
-					.form-wrap
-						.form-row
-							.form-group.col-12
-								label(for="#!") Tên(*)
-								input(type="text")
-							.form-group.col-12
-								label(for="#!") Công ty
-								input(type="text")
-							.form-group.col-12.col-md-6
-								label(for="#!") Email(*)
-								input(type="text")
-							.form-group.col-12.col-md-6
-								label(for="#!") Số điện thoại
-								input(type="text")
-							.form-group.col-12
-								label(for="#!") Yêu cầu
-								textarea(name="", cols="30", rows="3")
-							.frm-btn
-								input(type="submit", value="Gửi")
-			.col-12.col-lg-4
-				.contact-map
-					iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.470328882608!2d106.68661631538359!3d10.77524399232227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3b309e9977%3A0x223a8534302e7eb6!2zMTQ0IFbDtSBWxINuIFThuqduLCBQaMaw4budbmcgNiwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1529909671872', width='100%', height='300', frameborder='0', style='border:0', allowfullscreen='')
-			.col-12
-				.contact-info
-					h1.company Công ty TNHH Thương Mại Thiên Quốc
+		h1.home-title.text-center Chúng tôi luôn sẵn sàng hỗ trợ
+		.home-des.text-center Hãy liên lạc với chúng tôi nếu bạn muốn tìm hiểu thêm về các sản phẩm bảo hiểm hay có bất cứ câu hỏi nào về vấn đề hỗ trợ và quy trình giải quyết quyền lợi bảo hiểm.
+		.contact-info
+			.row
+				.col-12.col-md-4
+					.item
+						.icon <span class="lnr lnr-apartment"></span>
+						.des
+							h5.text-uppercase.text-green.text-500 Địa chỉ
+							p.mb-2 46-48-50 Phạm Hồng Thái, quận 1
+				.col-12.col-md-4
+					.item
+						.icon <span class="lnr lnr-phone-handset"></span>
+						.des
+							h5.text-uppercase.text-green.text-500 Trung tâm DV khách hàng
+							a.mb-2(href="tel:0-28-6255 6393") 0-28-6255 6393
+							h5.text-uppercase.text-green.text-500 Điện thoại
+							a.mb-2(href="tel:0 - 28 - 6255 6699") 0 - 28 - 6255 6699
+				.col-12.col-md-4
+					.item
+						.icon <span class="lnr lnr-calendar-full"></span>
+						.des
+							h5.text-uppercase.text-green.text-500 Ngày làm việc
+							p.mb-2 Thứ hai đến Thứ sáu (trừ ngày lễ, Thứ 7 và Chủ Nhật)
+							h5.text-uppercase.text-green.text-500 Giờ làm việc
+							p.mb-2 8:30 - 17:30
+		//- .contact-form
+			h1.home-title.text-center Bạn cần tư vấn?
+			.home-des.text-center Vui lòng nhập thông tin và chúng tôi sẽ liên lạc với bạn
+			.form-wrap
+				.form-row
+					.form-group.col-12.col-md-6
+						label Họ tên
+						input(type="text")
+					.form-group.col-12.col-md-6
+						label Email
+						input(type="text")
+					.form-group.col-12.col-md-6
+						label Nơi ở hiện tại
+						input(type="text")
+					.form-group.col-12.col-md-6
+						label Di động
+						input(type="text")
+					.form-group.col-12
+						label Họ tên
+						textarea(name="", cols="30", rows="4")
+					.form-group
+						ul.radio
+							li
+								input#rd1(type="radio", name="radio")
+								label(for="rd1") Tôi chưa phải là khách hàng của Cathay Life
+							li
+								input#rd2(type="radio", name="radio")
+								label(for="rd2") Tôi là khách hàng hiện hữu của Cathay Life
+section.about-section5
+	.container
+		.home-title.text-center Văn phòng đại diện
+		.about-branch
+			.branch-map
+				iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.852398960407!2d106.69441222013455!3d10.775799261793983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f18738d0b5b%3A0x9a4becdf3cd0172b!2zQ8O0bmcgdHkgVE5ISCBC4bqjbyBoaeG7g20gTmjDom4gdGjhu40gQ2F0aGF5IC0gVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1530115018525', width='100%', height='560', frameborder='0', style='border:0', allowfullscreen='')
+			.branch-filter
+				.filter-option
+					label Chọn Tỉnh / Thành
+					select
+						option Thành phố Hồ Chí Minh
+				.filter-result
 					ul
-						li 144 Võ Văn Tần, Phường 6, Quận 3, TPHCM
-						li Email: info@thienquoc.vn
-						li Tel: +84 (0)28 3930 7476
-						li Fax: +84 (0)28 3930 7477
-						li Website: www.thienquoc.vn
-						li Facebook: thienquoc.company
+						li 7th-8th floor, N'orch Building, 170-170 Bis-172 Bùi Thị Xuân, Dist. 1, HCM city
+							br
+							|ĐT: (84-28) 6255 6389 - Fax: (84-28) 6255 6388
+						li.active 7th-8th floor, N'orch Building, 170-170 Bis-172 Bùi Thị Xuân, Dist. 1, HCM city
+							br
+							|ĐT: (84-28) 6255 6389 - Fax: (84-28) 6255 6388
+						li 7th-8th floor, N'orch Building, 170-170 Bis-172 Bùi Thị Xuân, Dist. 1, HCM city
+							br
+							|ĐT: (84-28) 6255 6389 - Fax: (84-28) 6255 6388
+						li 7th-8th floor, N'orch Building, 170-170 Bis-172 Bùi Thị Xuân, Dist. 1, HCM city
+							br
+							|ĐT: (84-28) 6255 6389 - Fax: (84-28) 6255 6388
+						li 7th-8th floor, N'orch Building, 170-170 Bis-172 Bùi Thị Xuân, Dist. 1, HCM city
+							br
+							|ĐT: (84-28) 6255 6389 - Fax: (84-28) 6255 6388
+						li 7th-8th floor, N'orch Building, 170-170 Bis-172 Bùi Thị Xuân, Dist. 1, HCM city
+							br
+							|ĐT: (84-28) 6255 6389 - Fax: (84-28) 6255 6388
