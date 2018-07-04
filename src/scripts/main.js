@@ -12,6 +12,9 @@ $(document).ready(function() {
         $('.menu').toggleClass('open');
         $('.overlay').fadeToggle(500);
     });
+    $('.btn-showsub').click(function() {
+        $(this).siblings('.mega').slideToggle(500);
+    });
     $('.overlay').click(function() {
         $('.menu').removeClass('open');
         $(this).fadeOut(500);
