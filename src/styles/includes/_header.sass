@@ -125,45 +125,54 @@ header
 							+fs(18rem)
 							color: $green
 					&.has-mega
-						.mega
-							+pos(abs, 90% 0 null 0)
-							background: $white
-							padding: 40px
-							border: 1px solid darken($white,10%)
-							box-shadow: 0px 2px 5px color-rgba($black,0.2)
-							visibility: hidden
-							opacity: 0
-							+transition(all,0.5s)
-							+media-breakpoint-down(lg)
-								+pos(static,null)
-								visibility: visible
-								opacity: 1
-								display: none
-								+transition(all,0s)
-								padding: 15px
-								border: none
-								box-shadow: none
-								background: darken($white,3%)
-							ul
-								li
-									a
-										display: block
-										+fs(15rem)
-										color: darken($white,60%)
-										margin-bottom: 10px
+					&.has-sub
+						+pos(rel,null)
+					.mega, .sub
+						+pos(abs, 90% 0 null 0)
+						background: $white
+						padding: 40px
+						border: 1px solid darken($white,10%)
+						box-shadow: 0px 2px 5px color-rgba($black,0.2)
+						visibility: hidden
+						opacity: 0
+						+transition(all,0.5s)
+						+media-breakpoint-down(lg)
+							+pos(static,null)
+							visibility: visible
+							opacity: 1
+							display: none
+							+transition(all,0s)
+							padding: 15px
+							border: none
+							box-shadow: none
+							background: darken($white,3%)
+						ul
+							li
+								a
+									display: block
+									+fs(15rem)
+									color: darken($white,60%)
+									margin-bottom: 10px
+									+media-breakpoint-down(lg)
+										+fs(13rem)
+										margin-bottom: 5px
+									&.big
+										+fs(17rem)
+										font-weight: 500
+										color: $main
+										margin-bottom: 15px
 										+media-breakpoint-down(lg)
-											+fs(13rem)
-											margin-bottom: 5px
-										&.big
-											+fs(17rem)
-											font-weight: 500
-											color: $main
-											margin-bottom: 15px
-											+media-breakpoint-down(lg)
-												+fs(15rem)
-												margin-bottom: 10px
-										&:hover
-											color: $lightgreen
+											+fs(15rem)
+											margin-bottom: 10px
+									&:hover
+										color: $lightgreen
+					.sub
+						right: 0
+						width: 300px
+						padding: 40px 20px
+						+media-breakpoint-down(lg)
+							width: 100%
+							padding: 15px
 					&.active
 						> a
 							+media-breakpoint-down(lg)
@@ -179,7 +188,7 @@ header
 								&:after
 									left: 0
 									right: 0
-							.mega
+							.mega, .sub
 								visibility: visible
 								opacity: 1
 	.col-right

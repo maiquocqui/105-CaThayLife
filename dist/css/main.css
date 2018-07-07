@@ -8059,7 +8059,9 @@ header {
             content: '\f107';
             font-size: 1.125rem;
             color: #00994e; }
-        header .menu .menu-wrap ul.menu-link > li.has-mega .mega {
+        header .menu .menu-wrap ul.menu-link > li.has-sub {
+          position: relative; }
+        header .menu .menu-wrap ul.menu-link > li .mega, header .menu .menu-wrap ul.menu-link > li .sub {
           position: absolute;
           top: 90%;
           right: 0;
@@ -8077,7 +8079,7 @@ header {
           -o-transition: all, 0.5s;
           transition: all, 0.5s; }
           @media (max-width: 1199.98px) {
-            header .menu .menu-wrap ul.menu-link > li.has-mega .mega {
+            header .menu .menu-wrap ul.menu-link > li .mega, header .menu .menu-wrap ul.menu-link > li .sub {
               position: static;
               visibility: visible;
               opacity: 1;
@@ -8092,26 +8094,34 @@ header {
               border: none;
               box-shadow: none;
               background: #f7f7f7; } }
-          header .menu .menu-wrap ul.menu-link > li.has-mega .mega ul li a {
+          header .menu .menu-wrap ul.menu-link > li .mega ul li a, header .menu .menu-wrap ul.menu-link > li .sub ul li a {
             display: block;
             font-size: 0.9375rem;
             color: #666666;
             margin-bottom: 10px; }
             @media (max-width: 1199.98px) {
-              header .menu .menu-wrap ul.menu-link > li.has-mega .mega ul li a {
+              header .menu .menu-wrap ul.menu-link > li .mega ul li a, header .menu .menu-wrap ul.menu-link > li .sub ul li a {
                 font-size: 0.8125rem;
                 margin-bottom: 5px; } }
-            header .menu .menu-wrap ul.menu-link > li.has-mega .mega ul li a.big {
+            header .menu .menu-wrap ul.menu-link > li .mega ul li a.big, header .menu .menu-wrap ul.menu-link > li .sub ul li a.big {
               font-size: 1.0625rem;
               font-weight: 500;
               color: #333333;
               margin-bottom: 15px; }
               @media (max-width: 1199.98px) {
-                header .menu .menu-wrap ul.menu-link > li.has-mega .mega ul li a.big {
+                header .menu .menu-wrap ul.menu-link > li .mega ul li a.big, header .menu .menu-wrap ul.menu-link > li .sub ul li a.big {
                   font-size: 0.9375rem;
                   margin-bottom: 10px; } }
-            header .menu .menu-wrap ul.menu-link > li.has-mega .mega ul li a:hover {
+            header .menu .menu-wrap ul.menu-link > li .mega ul li a:hover, header .menu .menu-wrap ul.menu-link > li .sub ul li a:hover {
               color: #71bf44; }
+        header .menu .menu-wrap ul.menu-link > li .sub {
+          right: 0;
+          width: 300px;
+          padding: 40px 20px; }
+          @media (max-width: 1199.98px) {
+            header .menu .menu-wrap ul.menu-link > li .sub {
+              width: 100%;
+              padding: 15px; } }
         @media (max-width: 1199.98px) {
           header .menu .menu-wrap ul.menu-link > li.active > a {
             background: #00994e;
@@ -8124,7 +8134,7 @@ header {
           header .menu .menu-wrap ul.menu-link > li:hover > a:after {
             left: 0;
             right: 0; }
-          header .menu .menu-wrap ul.menu-link > li:hover .mega {
+          header .menu .menu-wrap ul.menu-link > li:hover .mega, header .menu .menu-wrap ul.menu-link > li:hover .sub {
             visibility: visible;
             opacity: 1; } }
   header .col-right {
@@ -8641,7 +8651,9 @@ header {
     font-weight: 300;
     color: #fff;
     background: #00994e;
-    margin-top: calc(-100% + 40px); }
+    margin-top: calc(-100% + 40px);
+    position: relative;
+    z-index: 5; }
     @media (max-width: 1199.98px) {
       .breadcrumb-wrap .pagename {
         font-size: 2.25rem;
